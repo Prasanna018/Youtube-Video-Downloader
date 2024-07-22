@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+nav {
+    /* position: sticky; */
+    /* top: 0px; */
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background: linear-gradient(#654ea3, #eaafc8);
+
+    /* background: transparent; */
+
+
+}
+
+body {
+    scroll-behavior: smooth;
+    /* background-color: #eaafc8; */
+}
+
+#search {
+    height: 40px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 7px;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid wheat;
+    border-radius: 10px;
+
+}
+
+
+
+main {
+    background-color: black;
+    height: fit-content;
+    width: 90vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+main div {
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+
+}
+
+main div img {
+    height: 250px;
+    width: 350px;
+    object-fit: contain;
+}
+
+main div span {
+    font-size: 1.4rem;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(37, 12, 60);
+    color: white;
+
+
+}
+
+main div a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+
+
+
+
+}
+
+main div a:hover {
+    border-bottom: 2px solid wheat;
+}
