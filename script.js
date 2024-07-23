@@ -20,9 +20,11 @@ async function getData() {
     let searchValue = search.value;
     try {
         if (searchValue !== "") {
+            main.classList.add("loader");
             let res = await fetch(`https://Video-Downloader.proxy-production.allthingsdev.co/youtube/download?url=${searchValue}`, requestOptions)
             let data = await res.json();
             let display = data;
+            main.classList.remove("loader");
             let arr = data.downloadLinks
             arr.forEach(element => {
                 console.log(element);
